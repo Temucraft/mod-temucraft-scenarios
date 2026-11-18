@@ -1,0 +1,53 @@
+[worldserver]
+
+########################################
+# mod-temucraft-scenarios
+########################################
+#
+#    Temucraft.Scenarios.Enable
+#        Description: Mists of Pandaria scenarios as short scripted instances, entered through the Scenario Guide
+#                     (creature 608803).
+#        Default:     1
+
+Temucraft.Scenarios.Enable = 1
+
+#
+#    Temucraft.Scenarios.MinLevel
+#        Description: Lowest level that can be sent into a scenario.
+#        Default:     80
+
+Temucraft.Scenarios.MinLevel = 80
+
+#
+#    Temucraft.Scenarios.MaxPlayers
+#        Description: Largest group the guide sends in.
+#        Default:     3
+
+Temucraft.Scenarios.MaxPlayers = 3
+
+#
+#    Temucraft.Scenarios.RewardGold
+#        Description: Copper every player gets when the scenario is completed (0 = none).
+#        Default:     500000 (50 gold)
+
+Temucraft.Scenarios.RewardGold = 500000
+
+#
+#    Temucraft.Scenarios.RewardItem
+#    Temucraft.Scenarios.RewardItemCount
+#        Description: Item (and how many) every player gets on completion (0 = none).
+#        Default:     0, 1
+
+Temucraft.Scenarios.RewardItem = 0
+Temucraft.Scenarios.RewardItemCount = 1
+
+#
+#    Temucraft.Scenarios.UngaIngoo.BrewTarget
+#    Temucraft.Scenarios.UngaIngoo.BrewPerKill
+#    Temucraft.Scenarios.UngaIngoo.BrewPerObject
+#        Description: Unga Ingoo stage 2: brew needed, brew per slain hozen, brew per mug / keg picked up.
+#        Default:     200, 5, 10
+
+Temucraft.Scenarios.UngaIngoo.BrewTarget = 200
+Temucraft.Scenarios.UngaIngoo.BrewPerKill = 5
+Temucraft.Scenarios.UngaIngoo.BrewPerObject = 10
