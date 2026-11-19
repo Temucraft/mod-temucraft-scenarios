@@ -6,10 +6,10 @@ Mists of Pandaria scenarios as short scripted instances for 1-3 players, all in 
 
 The three stages of the 5.4.8 scenario:
 
-1. **Escort Brewmaster Bo** — talk to Bo at the landing; he walks to the Unga Ingoo brewing cauldron.
-2. **Fill the Brewing Cauldron** — 200 Unga Jungle Brew: every slain hozen or pirate adds some, and the mugs, kegs
+1. **Escort Brewmaster Bo**: talk to Bo at the landing; he walks to the Unga Ingoo brewing cauldron.
+2. **Fill the Brewing Cauldron**: 200 Unga Jungle Brew: every slain hozen or pirate adds some, and the mugs, kegs
    and jungle brew around the island can be picked up for more.
-3. **Defeat Captain Ook** — Ook can't be attacked until the cauldron is full.
+3. **Defeat Captain Ook**: Ook can't be attacked until the cauldron is full.
 
 The 3.3.5 client has no scenario objectives frame, so each stage and the brew count are shown in the middle of the
 screen and in chat. On completion every player gets the configured reward.
