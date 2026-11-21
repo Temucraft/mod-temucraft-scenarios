@@ -14,7 +14,7 @@
  *   3. Defeat Captain Ook.
  * The 3.3.5 client has no scenario objectives frame, so each stage and the brew count are announced on screen.
  *
- * Players get in through the Scenario Guide (creature 608803) or the GM command .scenario. The scenario maps are
+ * Players get in through the Scenario Guide (creature 608803) or the GM command .temucraft scenario. The scenario maps are
  * made dungeons by mod-temucraft-world (map_dbc), which also holds their spawns.
  *
  * Text comes from module_string (module "mod-temucraft-scenarios"), with English built in as a fallback.
@@ -392,7 +392,7 @@ namespace
             {
                 { "unga", HandleUnga, 101101 /* SEC_GAMEMASTER -> RBAC */, Console::No },
             };
-            static ChatCommandTable root = { { "scenario", sub } };
+            static ChatCommandTable root = { { "temucraft scenario", sub } };
             return root;
         }
 

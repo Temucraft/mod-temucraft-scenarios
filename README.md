@@ -20,7 +20,7 @@ Battle on the High Seas (map 1099) isn't in yet: no database the scripts came fr
 
 - **Scenario Guide** (creature 608803, Lorewalker Pang): place it where you like (`.npc add 608803`) and pick a
   scenario from its menu. Level and group-size limits are in the config.
-- GMs: `.scenario unga`.
+- GMs: `.temucraft scenario unga`.
 
 ## Install
 
