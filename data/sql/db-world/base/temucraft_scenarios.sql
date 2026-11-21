@@ -1,16 +1,17 @@
 -- mod-temucraft-scenarios: the Scenario Guide, the scenario's script names and the module's texts
-DELETE FROM `creature_template` WHERE `entry` = 608803;
+SET @Guide := 608803;
+DELETE FROM `creature_template` WHERE `entry` = @Guide;
 INSERT INTO `creature_template` (`entry`, `name`, `subname`, `IconName`, `gossip_menu_id`, `minlevel`, `maxlevel`, `exp`, `faction`, `npcflag`,
   `speed_walk`, `speed_run`, `rank`, `unit_class`, `unit_flags`, `type`, `type_flags`, `AIName`, `MovementType`, `HealthModifier`, `RegenHealth`,
   `flags_extra`, `ScriptName`) VALUES
-(608803, 'Lorewalker Pang', 'Scenario Guide', '', 0, 80, 80, 2, 35, 1, 1, 1.14286, 0, 1, 768, 7, 0, '', 0, 1, 1, 2, 'npc_temucraft_scenario_guide');
-DELETE FROM `creature_template_model` WHERE `CreatureID` = 608803;
+(@Guide, 'Lorewalker Pang', 'Scenario Guide', '', 0, 80, 80, 2, 35, 1, 1, 1.14286, 0, 1, 768, 7, 0, '', 0, 1, 1, 2, 'npc_temucraft_scenario_guide');
+DELETE FROM `creature_template_model` WHERE `CreatureID` = @Guide;
 INSERT INTO `creature_template_model` (`CreatureID`, `Idx`, `CreatureDisplayID`, `DisplayScale`, `Probability`, `VerifiedBuild`)
-SELECT 608803, 0, `CreatureDisplayID`, 1, 1, 0 FROM `creature_template_model` WHERE `CreatureID` = 28693 AND `Idx` = 0;
+SELECT @Guide, 0, `CreatureDisplayID`, 1, 1, 0 FROM `creature_template_model` WHERE `CreatureID` = 28693 AND `Idx` = 0;
 
-DELETE FROM `npc_text` WHERE `ID` = 608803;
+DELETE FROM `npc_text` WHERE `ID` = @Guide;
 INSERT INTO `npc_text` (`ID`, `text0_0`, `text0_1`, `Probability0`) VALUES
-(608803, 'Every story is better lived than told. Pick one, gather a friend or two, and I will send you right into it.', '', 1);
+(@Guide, 'Every story is better lived than told. Pick one, gather a friend or two, and I will send you right into it.', '', 1);
 
 -- Unga Ingoo (map 1048): the instance script, Brewmaster Bo and the brew you can pick up
 INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES (1048, 0, 'instance_temucraft_unga_ingoo', 0)

@@ -46,8 +46,6 @@ namespace
 {
     constexpr char const* MODULE = "mod-temucraft-scenarios";
     constexpr uint32 MAP_UNGA_INGOO = 1048;
-    constexpr uint32 NPC_GUIDE = 608803;
-    constexpr uint32 TEXT_GUIDE = 608803;
 
     enum UngaCreatures : uint32
     {
@@ -80,6 +78,7 @@ namespace
         uint32 rewardGold = 500000;     // copper
         uint32 rewardItem = 0;
         uint32 rewardItemCount = 1;
+        uint32 guideText = 608803;
     } cfg;
 
     void LoadSettings()
@@ -93,6 +92,7 @@ namespace
         cfg.rewardGold = sConfigMgr->GetOption<uint32>("Temucraft.Scenarios.RewardGold", 500000);
         cfg.rewardItem = sConfigMgr->GetOption<uint32>("Temucraft.Scenarios.RewardItem", 0);
         cfg.rewardItemCount = sConfigMgr->GetOption<uint32>("Temucraft.Scenarios.RewardItemCount", 1);
+        cfg.guideText = sConfigMgr->GetOption<uint32>("Temucraft.Scenarios.GuideText", 608803);
     }
 
     template<typename T>
@@ -369,7 +369,7 @@ namespace
         {
             ClearGossipMenuFor(player);
             AddGossipItemFor(player, GOSSIP_ICON_BATTLE, Text(player, S_GUIDE_UNGA, "Unga Ingoo (scenario, 1-3 players)"), GOSSIP_SENDER_MAIN, MAP_UNGA_INGOO);
-            SendGossipMenuFor(player, TEXT_GUIDE, creature->GetGUID());
+            SendGossipMenuFor(player, cfg.guideText, creature->GetGUID());
             return true;
         }
 

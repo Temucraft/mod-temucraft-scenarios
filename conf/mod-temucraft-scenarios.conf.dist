@@ -51,3 +51,10 @@ Temucraft.Scenarios.RewardItemCount = 1
 Temucraft.Scenarios.UngaIngoo.BrewTarget = 200
 Temucraft.Scenarios.UngaIngoo.BrewPerKill = 5
 Temucraft.Scenarios.UngaIngoo.BrewPerObject = 10
+
+#
+#    Temucraft.Scenarios.GuideText
+#        Description: npc_text of the scenario guide's menu. Must match data/sql.
+#        Default:     608803
+
+Temucraft.Scenarios.GuideText = 608803
